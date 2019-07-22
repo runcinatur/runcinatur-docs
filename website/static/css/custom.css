@@ -1,4 +1,32 @@
-/* your custom css */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.navPusher {
+    font-family: 'Muli', sans-serif;
+}
+
+.nav-site li a {
+    color: #945FE0 !important;
+}
+
+.nav-site li a:hover {
+    background-color: transparent !important;
+    color: rgb(113, 71, 172) !important;
+}
+
+.navigationSlider .slidingNav ul li.siteNavItemActive > a, .navigationSlider .slidingNav ul li.siteNavGroupActive > a {
+    background-color: white;
+    text-decoration: rgb(112, 66, 175);
+}
+
+.fixedHeaderContainer {
+    background-color: white;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.button {
+    border-radius: 20px;
+    padding: 10px 30px;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }

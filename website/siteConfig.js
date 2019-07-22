@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Framework', // Title for your website.
+  title: 'Runcinatur', // Title for your website.
   tagline: 'Build plugin wordpress',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -30,8 +30,8 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'framework',
-  organizationName: 'facebook',
+  projectName: 'runcinatur',
+  organizationName: 'runcinatur',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -54,15 +54,15 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#84DCCF',
-    secondaryColor: '#50514F',
+    primaryColor: '#945FE0',
+    secondaryColor: '#ffffff',
   },
 
   /* Custom fonts for website */
-  /*
+  
   fonts: {
     myFont: [
-      "Times New Roman",
+      "Muli",
       "Serif"
     ],
     myOtherFont: [
@@ -70,7 +70,7 @@ const siteConfig = {
       "system-ui"
     ]
   },
-  */
+  
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Jair Júnior`,
