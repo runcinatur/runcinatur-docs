@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap');
 
-.navPusher {
-    font-family: 'Muli', sans-serif;
+p {
+    font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .nav-site li a {

@@ -1,7 +1,7 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
+    "Introduction": ["introduction"],
+    "Structure": ["controllers", "views"],
     "Second Category": ["doc3"]
   },
   "docs-other": {

@@ -96,8 +96,12 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <h2>Para todos os projetos</h2>
+        <MarkdownBlock>
+          Crie plugins simples e complexos.
+          Vá desde um simples sistema de exibição shortcodes
+          até um super gerenciador de E-commerce.
+        </MarkdownBlock>
       </div>
     );
 
@@ -106,12 +110,12 @@ class Index extends React.Component {
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
+              'Runcinator traz diversas funcionalidades\
+              presentes nos principais frameworks do mercado. Será mais fácil desenhar as suas telas utilizando o Blade,\
+              gerenciar seus shortcodes, modelar o seu banco de dados e criar suas regras de negócio',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Novas funcionalidades ao WordPress',
           },
         ]}
       </Block>
@@ -122,10 +126,11 @@ class Index extends React.Component {
         {[
           {
             content:
-              'This is another description of how this project is useful',
+              'Nada das tediosas criações de classes, com o assistente Gear você criará controllers, views, shortcodes e models\
+              com apenas um comando.',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Sem trabalho chato',
           },
         ]}
       </Block>
@@ -136,10 +141,12 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
+              'Todos os projetos necessitam de um padrão de desenvolvimento que garanta a facilidade em realizar\
+              manutenções ou incremento de funcionalidades. Runcinator tem como principal objetivo padronizar a forma\
+              como o plugin é escrito e facilita o processo de desenvolvimento em equipe.',
             image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'Por que utilizar o Runcinator?',
           },
         ]}
       </Block>
@@ -149,16 +156,18 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
+            content: 'Organize o desenvolvimento dos seus plugins utilizando o padrão MVC e\
+                      ganhe mantenibilidade ao seu projeto',
             image: `${baseUrl}img/undraw_react.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Estrutura MVC',
           },
           {
-            content: 'The content of my second feature',
+            content: 'Conte com o Gear, um assistente criado para fazer as tarefas repetitivas enquanto você se preocupa com\
+                      a parte mais complexa',
             image: `${baseUrl}img/undraw_operating_system.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Agilidade',
           },
         ]}
       </Block>
