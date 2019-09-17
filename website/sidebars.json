@@ -2,7 +2,8 @@
   "docs": {
     "Introduction": ["introduction"],
     "Structure": ["controllers", "views"],
-    "Second Category": ["doc3"]
+    "Core": ["core", "routes", "shortcodes"],
+    "Tests": ["tests"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
