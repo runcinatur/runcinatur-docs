@@ -36,10 +36,14 @@ class HomeSplash extends React.Component {
     );
 
     const ProjectTitle = () => (
-      <h2 className="projectTitle">
-        <img src={`${baseUrl}img/runcinatur-logo.svg`} alt="Project Logo" height="250"/>
-        <small>{siteConfig.title}</small>
-      </h2>
+      <div>
+        <h2 className="projectTitle">
+          <img src={`${baseUrl}img/runcinatur-logo.svg`} alt="Runcinatur Logo" height="250"/>
+          <small>{siteConfig.title}</small>
+          
+        </h2>
+         <p>An easy and organized way to quickly create WordPress plugins.</p>
+      </div>
     );
 
     const PromoSection = props => (
@@ -60,13 +64,10 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="/docs/introduction">Getting Started</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -85,7 +86,7 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <GridBlock
-          align="center"
+          align="left"
           contents={props.children}
           layout={props.layout}
         />
@@ -96,11 +97,11 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Para todos os projetos</h2>
+        <h2>For all projects</h2>
         <MarkdownBlock>
-          Crie plugins simples e complexos.
-          Vá desde um simples sistema de exibição shortcodes
-          até um super gerenciador de E-commerce.
+          Create simple and complex plugins.
+           Go from a simple shortcodes display system
+           even a super E-commerce manager.
         </MarkdownBlock>
       </div>
     );
@@ -110,12 +111,12 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Runcinator traz diversas funcionalidades\
-              presentes nos principais frameworks do mercado. Será mais fácil desenhar as suas telas utilizando o Blade,\
-              gerenciar seus shortcodes, modelar o seu banco de dados e criar suas regras de negócio',
+              'Runcinatur brings several features \
+               present in the main frameworks. It will be easier to draw your screens using Blade, \
+               manage your shortcodes, model your database and create your business rules',
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
-            title: 'Novas funcionalidades ao WordPress',
+            title: 'Explore a new way to create plugins',
           },
         ]}
       </Block>
@@ -126,11 +127,11 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Nada das tediosas criações de classes, com o assistente Gear você criará controllers, views, shortcodes e models\
-              com apenas um comando.',
+              'No tedious class creations, with the Gear wizard you\'ll create controllers, views, shortcodes and models \
+               with just one command.',
             image: `${baseUrl}img/undraw_note_list.svg`,
             imageAlign: 'right',
-            title: 'Sem trabalho chato',
+            title: 'No process repetition',
           },
         ]}
       </Block>
@@ -141,12 +142,13 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Todos os projetos necessitam de um padrão de desenvolvimento que garanta a facilidade em realizar\
-              manutenções ou incremento de funcionalidades. Runcinator tem como principal objetivo padronizar a forma\
-              como o plugin é escrito e facilita o processo de desenvolvimento em equipe.',
+              'All projects require a development standard that\
+               ensures ease of maintenance or increased functionality.\
+               Runcinatur aims to standardize plugin designs and is written to\
+               facilitate the team development process.',
             image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
             imageAlign: 'right',
-            title: 'Por que utilizar o Runcinator?',
+            title: 'Why use Runcinatur?',
           },
         ]}
       </Block>
@@ -156,18 +158,17 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'Organize o desenvolvimento dos seus plugins utilizando o padrão MVC e\
-                      ganhe mantenibilidade ao seu projeto',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Organize your plugin development using the MVC standard and \
+                      gain maintainability for your project',
+            image: `${baseUrl}img/mvc.png`,
             imageAlign: 'top',
-            title: 'Estrutura MVC',
+            title: 'Model, View and Controller',
           },
           {
-            content: 'Conte com o Gear, um assistente criado para fazer as tarefas repetitivas enquanto você se preocupa com\
-                      a parte mais complexa',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Meet Gear, an assistant designed to perform repetitive tasks while you worry about the most complex part',
+            image: `${baseUrl}img/running.png`,
             imageAlign: 'top',
-            title: 'Agilidade',
+            title: 'Agility',
           },
         ]}
       </Block>
@@ -189,15 +190,7 @@ class Index extends React.Component {
       const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
 
       return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
+        <div>
         </div>
       );
     };
@@ -211,7 +204,6 @@ class Index extends React.Component {
           <LearnHow />
           <TryOut />
           <Description />
-          <Showcase />
         </div>
       </div>
     );

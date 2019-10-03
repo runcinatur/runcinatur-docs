@@ -40,7 +40,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'introduction', label: 'Docs'}, 
     {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    //{blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
@@ -72,7 +72,7 @@ const siteConfig = {
   
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Jair Júnior`,
+  copyright: `Copyright © ${new Date().getFullYear()} - Jair Júnior`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
