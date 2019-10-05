@@ -1,9 +1,10 @@
 {
   "docs": {
-    "Introduction": ["introduction"],
+    "Introduction": ["introduction", "setup"],
     "Structure": ["controllers", "views"],
-    "Core": ["core", "routes", "shortcodes"],
-    "Tests": ["tests"]
+    "Core": ["routes", "shortcodes"],
+    "Tests": ["tests"],
+    "Gear": ["gear"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
