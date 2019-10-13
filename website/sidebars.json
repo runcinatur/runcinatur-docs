@@ -2,7 +2,7 @@
   "docs": {
     "Introduction": ["introduction", "setup"],
     "Structure": ["controllers", "views"],
-    "Core": ["routes", "shortcodes"],
+    "Core": ["routes", "shortcodes", "hooks"],
     "Tests": ["tests"],
     "Gear": ["gear"]
   },
